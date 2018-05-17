@@ -1,9 +1,41 @@
 body {
     background-color: #fff;
     color: #999;
-  font-family: 'Open sans', sans-serif;
+    font-family: 'Open sans', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+div.logo-center {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.outline {
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    border: 1px solid white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -85px;
+}
+
+a#logo h1 {
+    letter-spacing: 4px;
+}
+
+.outline a {
+    text-align: center;
+    width: 100%;
+}
+
+.temp {
+    display: none;
 }
 
 a {
@@ -15,6 +47,7 @@ nav ul {
     list-style: none;
     list-style-image: none;
     margin: 0 10px;
+    text-align: center;
 }
 
 nav li {
@@ -30,6 +63,8 @@ nav {
     padding: 10px 0;
     margin: 20px 0 0;
     bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 footer {
@@ -41,12 +76,17 @@ footer {
 }
 
 header {
+    position: relative;
     background-color: #6ab47b;
     border-color: #599a68;
     float: left; /*for desktop*/
     margin: 0 0 30px 0;
     padding: 10px 0 ;
     width: 100%;
+    background-image: url('../img/beech.jpg');
+    background-size: 1500px 600px;
+    height: 500px;
+    background-repeat: no-repeat;
 
 }
 
@@ -55,22 +95,18 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: 3em;
     font-family: 'Arvo', sans-serif;
-    margin: 15px 0;
     font-weight: 700;
-    line-height: 0.8em;
+    line-height: 2em;
 }
 
 h2 {
-    font-size: 0.75em;
-    margin: -4px 0 0;
+    font-size: 1em;
+
     font-weight: normal;
 }
 
-nav a.selected, nav a:hover {
-    color: #32673f;
-}
 
 nav a {
     font-weight: 800;
@@ -118,7 +154,7 @@ h3 {
 #logo {
     text-align: center;
     margin: 0;
-    margin-left: 20px;
+    width: 100%;
 }
 
 #gallery {
@@ -164,5 +200,8 @@ hr {
     width: 100px;
     padding: 0;
     border-color: white;
+}
 
+a.selected {
+    color: #FF5722 !important;
 }
